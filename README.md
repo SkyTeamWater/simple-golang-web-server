@@ -1,4 +1,4 @@
-## simple-golang-web-server
+## simple-golang-web-server(sig-web-server)
 This project comprises the core Golang HTTP abstractions
 
 ### Installing
@@ -9,6 +9,8 @@ Run `go build main.go`.
 
 Then `main.exe (PORT)` or `./main (PORT)`
 
+### How To Use
+Just put you web file into `/www`
 
 ### License
 See [LICENSE](LICENSE).
