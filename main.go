@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -29,7 +30,10 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 	//* GET & POST test
 }
 func main() {
-	const PORT = "8090"
+	args := os.Args
+	var PORT string
+	PORT = args[1]
+	//const PORT = "8090"
 	http.HandleFunc("/", sayhelloName)        //设置访问的路由
 	err := http.ListenAndServe(":"+PORT, nil) //设置监听的端口
 	if err != nil {

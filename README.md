@@ -7,8 +7,8 @@ Note that currently this project has been tested on Windows10 and Ubuntu 20.04.1
 ### Build
 Run `go build main.go`.
 
-### Easy Install
-Run `go run main.go`.
+Then `main.exe (PORT)` or `./main (PORT)`
+
 
 ### License
 See [LICENSE](LICENSE).
