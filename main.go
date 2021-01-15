@@ -17,7 +17,16 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("key:", k)
 		fmt.Println("val:", strings.Join(v, ""))
 	}
-	fmt.Fprintf(w, "Hello Wrold!") //这个写入到w的是输出到客户端的
+	fmt.Fprintf(w, "Service Started..") //这个写入到w的是输出到客户端的
+	/*r.ParseForm()
+	var String string
+	if r.Method == "GET" {
+		String = r.FormValue("String")
+	} else if r.Method == "POST" {
+		String = r.PostFormValue("String")
+	}
+	io.WriteString(w, "String is:"+String)*/
+	//* GET & POST test
 }
 func main() {
 	const PORT = "8090"
